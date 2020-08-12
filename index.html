@@ -1,41 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Bootstrap Basic Portfolio</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
 </head>
+
 <body>
-  <ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link active" href="index.html">About Me</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="portfolio.html">Portfolio</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="contact.html">Contact</a>
-    </li>
-  </ul>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <div class="page-header">
-          <h1>About Me</h1>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <img src="https://placebear.com/200/200" alt="Placeholder" class="img-thumbnail">
-          </div>
-          <div class="col-md-9">
-            <p>Hi there. My name is Thomas Hoyt. I am born and raised here in Colorado, which is fun to see all the changes that are going on in my backyard from the diverse group of people that love to call Colorado home now. I grew up as a very active kid that always wanted
-              to be outside and doing something. Though it may have gotten me in trouble as a kid, it has carried over to my adult life. I love sports and being outdoors as much as possible. I wanted to become a web developer because of the unique and challenging oppurtunity it 
-              presents to those who master it. Its a creative outlet that takes years of practice and keyboard work to become advance (so I'm sorry if my work is still choppy!) In the end i hope to be a good junior developer and be hitting the job market in no time!
-            </p>
-          </div>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" id="logo">Thomas Hoyt</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="row">
+      <div class="col-md-8">
+        <article class="block">
+          <h1 class="block-header">About Me</h1>
+          <hr />
+          <img src="assets/images/profile.pic" alt="" id="about-image" />
+          <p>My name is Thomas Hoyt, currently in training to become a full certified full stack web developer here in lovely Colorado. I am currently a automation technician in Northern Colorado. 
+            I always found myself seeking more from work in a way that challenged me but still continued alllow me a creative outlet to express myself. I come from 0 background training in computers but thi scourse has taught me 
+            so much and shown me that I am willing to spend the hours necessary to accomplish anything. I am an outdoorsy person that likes to spend life on the move and seeing new things. Whether it be hiking any sport that can keep me moving
+            I will not say no. I hope to eventuallly find a spot where I can offer the skills I have learned to make a great contribution to wherever would provide an oppurtunity.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright
+    </p>
+  </footer>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

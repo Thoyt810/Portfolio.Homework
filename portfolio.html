@@ -1,53 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Thomas Hoyt's Portfolio</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css" media="screen">
 
 </head>
+
 <body>
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <div class="card" style="width: 18rem;">
-        <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Our firs Group Project</h5>
-          <p class="card-text">Our first group project consist of a cocktail and food recipe builer based off your chose ingredients.</p>
-          <a href="https://magire01.github.io/project1-group7/" class="btn btn-primary">Check it out!</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" id="logo">Thomas Hoyt</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">About</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+
+  <div class="container">
+    <main class="row">
+      <div class="col-md-8">
+        <article class="block">
+          <h1 class="block-header">Portfolio</h1>
+          <hr />
+          <div class="row">
+            <h1>Presenting our first 2 projects</h1>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <a href="https://github.com/magire01/project1-group7"></a>
+              <img class="img-fluid port-image" src="assets/images/fmhDk9tqT9J4Lqr8.jpg" alt="">
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <a href="https://murmuring-headland-14646.herokuapp.com/"></a>
+              <img class="img-fluid port-image" src="assets/images/P2Logo_410x.webp" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <h1>The assignments I learned the most from</h1>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <a href="https://github.com/Thoyt810/PasswordHomework"></a>
+              <img class="img-fluid port-image" src="assets/images/how-to-create-a-random-password-generator_x46u.jpg" alt="">
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <a href="https://github.com/Thoyt810/letsCheckTheWeather"></a>
+              <img class="img-fluid port-image" src="assets/images/images.jpeg" alt="">
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <a href="https://github.com/Thoyt810/employeeDatabase"></a>
+              <img class="img-fluid port-image" src="assets/images/employees-schema.png" alt="">
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Password Generator</h5>
-          <p class="card-text"> Password generator was my first breakthough homework where i really grasped the concepts of coding and felt like i had a functional appraoch that was all mine</p>
-          <a href="https://thoyt810.github.io/PasswordHomework/" class="btn btn-primary">Check it out!</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Weather App</h5>
-          <p class="card-text"> Our first homework where i feel like learned so much and really prepared me for our first group project!</p>
-          <a href="https://thoyt810.github.io/letsCheckTheWeather/" class="btn btn-primary">Check it out!</a>
-        </div>
-      </div>
-    </div>
-      <h1>HEY LEO</h1>
-      <p>Okay so I did this project very early on and did not have the starter code but i put a working link to our website. i am going to remake this this is weekend and actually get it right. Honestly i dismissed it not thinking we would use it again. Obviously i was wrong! but i think this one had stater code that i need to grab, sorry its Shitty.</p>
+    </main>
+  </div>
+  
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Thomas Hoyt
+    </p>
+  </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script></script>
+
 </body>
+
 </html>
